@@ -21,7 +21,7 @@ The colorizedPrint method require three arguments: foreground, background and te
 
 
 ## How to use
-It's is really simple, like the image bellow
+It's is really simple, like the image below
 
 <img src="./images/example1.png">
 
