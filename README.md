@@ -14,7 +14,7 @@ Colors:
 
     Black, Red, Green, Yellow, Blue, Magenta, Cyan, Gray, Bright red, bright green, Bright yellow, Bright blue, Bright magenta, Bright cyan and Bright white
 
-All colors can be foreground and background, but in the code have a little difference
+All colors can be foreground and background, but in the code has a little difference
 
 ## colorizedPrint method
 The colorizedPrint method require three arguments: foreground, background and text, for each argument exist an enum for it
