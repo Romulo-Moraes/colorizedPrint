@@ -34,8 +34,9 @@ colorizedPrint(foreColor::fBrightGreen,backColor::bNone,"Hello, %s your %s",{"Wh
 <br/>
 
 ### and the result as expected:
+</br>
 
-<img height="14px" src="./images/example.png">
+<img height="16px" src="./images/example.png">
 
 
 
