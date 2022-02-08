@@ -1,4 +1,10 @@
 #include <stdio.h>
+#include <initializer_list>
+#include <iostream>
+
+using namespace std;
+
+static int findPosition;
 
 enum foreColor
 {
@@ -42,7 +48,16 @@ enum backColor
     bBrightWhite = 107
 };
 
-void colorizedPrint(int foreground, int background, const char textToPrint[])
+void colorizedPrint(int foreground, int background, string textToPrint, initializer_list<string> arguments = initializer_list<string>())
 {
-    printf("\033[%i;%im%s", foreground, background, textToPrint);
+    for(auto argument = arguments.begin();argument != arguments.end(); argument++){
+        findPosition = textToPrint.find("%s",0);
+        if(findPosition != string::npos){
+            textToPrint.replace(findPosition,2,*argument);
+        }
+        else{
+            break;
+        }
+    }
+    printf("\033[%i;%im%s", foreground, background, textToPrint.c_str());
 }
