@@ -59,5 +59,5 @@ void colorizedPrint(int foreground, int background, string textToPrint, initiali
             break;
         }
     }
-    printf("\033[%i;%im%s", foreground, background, textToPrint.c_str());
+    printf("\033[%i;%im%s\033[0m", foreground, background, textToPrint.c_str());
 }
